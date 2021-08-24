@@ -128,6 +128,8 @@ height: 100%;
 width: 100%;
 display: none;
 align-items: center;
+user-select: none;
+-moz-user-select: none;
 
 
 
@@ -158,4 +160,5 @@ align-items: center;
 #mensaje img{
 
     width: 35px;
+    margin: 2px;
 }

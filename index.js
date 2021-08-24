@@ -10,6 +10,7 @@ var numeros_actuales=[];
 function inicio(){
 
     document.getElementById("tirar").onclick=lanzar_inicio;
+    document.getElementById("cruz").onclick=cerrar;
 
 
 
@@ -52,10 +53,15 @@ function comparar(){
 
     if( numeros_actuales[0]==numeros_actuales[1] &&
         numeros_actuales[1]==numeros_actuales[2]){
+        let p=premios[numeros_actuales[0]];
+        let mensaje=`Has ganado ${p} monedas<div>`;
+        for (let k=0; k<p; k++){
 
-        let mensaje=`Has ganado ${premios[numeros_actuales[0]]} monedas`;
-
+            mensaje+=`<img src="img/moneda.jpg">`;
+        }
+        mensaje+='</div>';
         mostrar_mensaje(mensaje);
+        sonar();
         }
 
 
@@ -78,7 +84,7 @@ function mostrar_mensaje(m){
 
 function cerrar(){
 
-
+    document.getElementById("velo").style.display="none";
 
 }
 
