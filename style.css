@@ -121,14 +121,14 @@ margin: 10px 0 0 19px;
 }
 
 #velo{
-background-color: bga(255,255,255,0.6);
+background-color: rgba(255,255,255,0.6);
 position: fixed;
 top: 0;
 height: 100%;
 width: 100%;
 display: none;
 align-items: center;
-justify-content: center;
+
 
 
 }
